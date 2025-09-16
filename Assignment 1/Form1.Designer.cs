@@ -28,36 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            fNameLbl = new Label();
-            lNameLbl = new Label();
+            lblFName = new Label();
+            lblLName = new Label();
             txtFName = new TextBox();
             txtLName = new TextBox();
             txtHours = new TextBox();
-            label1 = new Label();
-            sumBtn = new Button();
-            clrBtn = new Button();
+            lblHours = new Label();
+            btnSum = new Button();
+            btnClear = new Button();
             lblSummary = new Label();
             SuspendLayout();
             // 
-            // fNameLbl
+            // lblFName
             // 
-            fNameLbl.AutoSize = true;
-            fNameLbl.Location = new Point(98, 45);
-            fNameLbl.Name = "fNameLbl";
-            fNameLbl.Size = new Size(80, 20);
-            fNameLbl.TabIndex = 0;
-            fNameLbl.Text = "&First Name";
-            fNameLbl.Click += label1_Click;
+            lblFName.AutoSize = true;
+            lblFName.Location = new Point(98, 45);
+            lblFName.Name = "lblFName";
+            lblFName.Size = new Size(80, 20);
+            lblFName.TabIndex = 0;
+            lblFName.Text = "&First Name";
+            lblFName.Click += label1_Click;
             // 
-            // lNameLbl
+            // lblLName
             // 
-            lNameLbl.AutoSize = true;
-            lNameLbl.Location = new Point(357, 45);
-            lNameLbl.Name = "lNameLbl";
-            lNameLbl.Size = new Size(79, 20);
-            lNameLbl.TabIndex = 2;
-            lNameLbl.Text = "&Last name:";
-            lNameLbl.Click += label1_Click_1;
+            lblLName.AutoSize = true;
+            lblLName.Location = new Point(357, 45);
+            lblLName.Name = "lblLName";
+            lblLName.Size = new Size(79, 20);
+            lblLName.TabIndex = 2;
+            lblLName.Text = "&Last name:";
+            lblLName.Click += label1_Click_1;
             // 
             // txtFName
             // 
@@ -81,35 +81,35 @@
             txtHours.Size = new Size(125, 27);
             txtHours.TabIndex = 5;
             // 
-            // label1
+            // lblHours
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(599, 45);
-            label1.Name = "label1";
-            label1.Size = new Size(106, 20);
-            label1.TabIndex = 4;
-            label1.Text = "&Hours Worked:";
+            lblHours.AutoSize = true;
+            lblHours.Location = new Point(599, 45);
+            lblHours.Name = "lblHours";
+            lblHours.Size = new Size(106, 20);
+            lblHours.TabIndex = 4;
+            lblHours.Text = "&Hours Worked:";
             // 
-            // sumBtn
+            // btnSum
             // 
-            sumBtn.Location = new Point(74, 195);
-            sumBtn.Name = "sumBtn";
-            sumBtn.Size = new Size(94, 29);
-            sumBtn.TabIndex = 6;
-            sumBtn.Text = "&Summarize";
-            sumBtn.UseVisualStyleBackColor = true;
-            sumBtn.Click += sumBtn_Click;
+            btnSum.Location = new Point(74, 195);
+            btnSum.Name = "btnSum";
+            btnSum.Size = new Size(94, 29);
+            btnSum.TabIndex = 6;
+            btnSum.Text = "&Summarize";
+            btnSum.UseVisualStyleBackColor = true;
+            btnSum.Click += sumBtn_Click;
             // 
-            // clrBtn
+            // btnClear
             // 
-            clrBtn.Location = new Point(207, 195);
-            clrBtn.Name = "clrBtn";
-            clrBtn.Size = new Size(94, 29);
-            clrBtn.TabIndex = 7;
-            clrBtn.Text = "&Clear";
-            clrBtn.TextImageRelation = TextImageRelation.ImageAboveText;
-            clrBtn.UseVisualStyleBackColor = true;
-            clrBtn.Click += clrBtn_Click;
+            btnClear.Location = new Point(207, 195);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(94, 29);
+            btnClear.TabIndex = 7;
+            btnClear.Text = "&Clear";
+            btnClear.TextImageRelation = TextImageRelation.ImageAboveText;
+            btnClear.UseVisualStyleBackColor = true;
+            btnClear.Click += clrBtn_Click;
             // 
             // lblSummary
             // 
@@ -131,14 +131,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(lblSummary);
-            Controls.Add(clrBtn);
-            Controls.Add(sumBtn);
-            Controls.Add(label1);
+            Controls.Add(btnClear);
+            Controls.Add(btnSum);
+            Controls.Add(lblHours);
             Controls.Add(txtHours);
             Controls.Add(txtLName);
             Controls.Add(txtFName);
-            Controls.Add(lNameLbl);
-            Controls.Add(fNameLbl);
+            Controls.Add(lblLName);
+            Controls.Add(lblFName);
             Name = "Form1";
             Text = "Assignment 1";
             Load += Form1_Load;
@@ -148,14 +148,14 @@
 
         #endregion
 
-        private Label fNameLbl;
-        private Label lNameLbl;
+        private Label lblFName;
+        private Label lblLName;
         private TextBox txtFName;
         private TextBox txtLName;
         private TextBox txtHours;
-        private Label label1;
-        private Button sumBtn;
-        private Button clrBtn;
+        private Label lblHours;
+        private Button btnSum;
+        private Button btnClear;
         private Label lblSummary;
     }
 }
